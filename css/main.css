@@ -1422,8 +1422,11 @@ p {
 	color: #C1CFDF;
 	font-weight: 300;
 }
-
-h1,
+h1 {
+    color: #6C55FE;
+	font-family: "Fira Sans", sans-serif;
+	line-height: 1.4;
+}
 h2,
 h3,
 h4,
