@@ -137,7 +137,26 @@ a { color: inherit; text-decoration-thickness: 2px; text-underline-offset: .2em;
 .hero-facts dt { color: var(--muted); }
 .hero-facts dd { font-weight: 700; font-size: 1.125rem; line-height: 1.3; }
 
-.hero-mark { display: none; fill: var(--ink); }
+.hero-mark { display: none; fill: var(--ink); overflow: visible; }
+.hero-mark .hm-shadow { fill: var(--accent); transform: translate(14px, 14px); }
+
+/* Signature moment (the only one on the page — DESIGN.md §Motion).
+   Static by default; animates once on load only when motion is welcome.
+   Pieces travel along the monogram's own 45° slant, hard-edged, no blur. */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-mark .hm-r { animation: hm-slide .6s var(--ease) .1s backwards; }
+  .hero-mark .hm-s { animation: hm-slide .6s var(--ease) .28s backwards; }
+  .hero-mark .hm-shadow { animation: hm-drop .32s cubic-bezier(.3, 1.6, .5, 1) .85s backwards; }
+}
+@keyframes hm-slide {
+  from { transform: translate(-90px, -90px); opacity: 0; }
+  30% { opacity: 1; }
+  to { transform: none; opacity: 1; }
+}
+@keyframes hm-drop {
+  from { transform: translate(0, 0); }
+  to { transform: translate(14px, 14px); }
+}
 @media (min-width: 64rem) {
   .hero { grid-template-columns: minmax(0, 1fr) minmax(16rem, 24rem); column-gap: 4rem; align-items: end; }
   .hero-text, .hero-facts { grid-column: 1; }
