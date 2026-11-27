@@ -288,7 +288,7 @@ a { color: inherit; text-decoration-thickness: 2px; text-underline-offset: .2em;
 .contact { background: var(--ink); color: var(--paper); padding-block: clamp(4.5rem, 12vw, 9rem); }
 .contact .label { color: var(--muted-on-ink); }
 .contact-mail {
-  display: inline-block; margin-bottom: 2.5rem;
+  display: inline-block; margin-bottom: 2.5rem; padding-block: .5rem; /* ≥44px tap target */
   font-size: clamp(1.25rem, 5vw, 3rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.15;
   overflow-wrap: anywhere;
   text-decoration-color: var(--accent); text-decoration-thickness: 3px; text-underline-offset: .18em;
@@ -330,3 +330,4 @@ a { color: inherit; text-decoration-thickness: 2px; text-underline-offset: .2em;
 .notfound h1 { font-size: clamp(2.5rem, 7vw, 4.5rem); }
 .notfound p:not(.label) { font-size: 1.125rem; max-width: 36em; }
 .nowrap { white-space: nowrap; }
+.gallery video:focus-within { outline: 3px solid var(--ink); outline-offset: 3px; } /* focus lands on the native controls inside */
