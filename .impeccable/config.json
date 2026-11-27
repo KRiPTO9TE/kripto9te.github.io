@@ -1,0 +1,53 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-27T08:47:36.070Z",
+        "reason": "Claude: flagged rows are open ruled lists (card-facts 16px padding-top on mobile, no border on desktop; timeline li 24px padding-block; contact inset by .wrap gutter + padding-block). Not flush; checked in screenshots at 375/1280."
+      },
+      {
+        "rule": "overused-font",
+        "value": "space grotesk",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-27T08:47:36.084Z",
+        "reason": "Owner's brief PORTFOLIO_REDESIGN.md §6.2 names Space Grotesk; chosen for its OFL license over unlicensed Gilroy/Neue Montreal."
+      },
+      {
+        "rule": "overused-font",
+        "value": "space grotesk",
+        "files": [
+          "archive.html"
+        ],
+        "createdAt": "2026-11-27T08:47:36.098Z",
+        "reason": "Owner's brief PORTFOLIO_REDESIGN.md §6.2 names Space Grotesk; chosen for its OFL license over unlicensed Gilroy/Neue Montreal."
+      },
+      {
+        "rule": "overused-font",
+        "value": "space grotesk",
+        "files": [
+          "404.html"
+        ],
+        "createdAt": "2026-11-27T08:47:36.112Z",
+        "reason": "Owner's brief PORTFOLIO_REDESIGN.md §6.2 names Space Grotesk; chosen for its OFL license over unlicensed Gilroy/Neue Montreal."
+      },
+      {
+        "rule": "overused-font",
+        "value": "space grotesk",
+        "files": [
+          "css/site.css"
+        ],
+        "createdAt": "2026-11-27T08:47:36.126Z",
+        "reason": "Owner's brief PORTFOLIO_REDESIGN.md §6.2 names Space Grotesk; chosen for its OFL license over unlicensed Gilroy/Neue Montreal."
+      }
+    ]
+  }
+}
